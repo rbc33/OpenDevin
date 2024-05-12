@@ -8,10 +8,15 @@ export type Settings = {
 };
 
 export const DEFAULT_SETTINGS: Settings = {
-  LLM_MODEL: "gpt-3.5-turbo",
+  LLM_MODEL: "ollama/llama3",
   AGENT: "CodeActAgent",
   LANGUAGE: "en",
   LLM_API_KEY: "",
+  LLM_API_KEY="ollama",
+  LLM_EMBEDDING_MODEL="ollama/mxbai-embed-large",
+  base_url="http://192.168.0.100:11434",
+  embedding_model="mxbai-embed-large",
+  embedding_base_url="http://192.168.0.100:11434",
 };
 
 const validKeys = Object.keys(DEFAULT_SETTINGS) as (keyof Settings)[];
