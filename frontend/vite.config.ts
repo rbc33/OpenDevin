@@ -17,7 +17,8 @@ export default defineConfig(({ mode }) => {
   const PROTOCOL = USE_TLS ? "https" : "http";
   const WS_PROTOCOL = USE_TLS ? "wss" : "ws";
 
-  const API_URL = `${PROTOCOL}://${VITE_BACKEND_HOST}/`;
+//  const API_URL = `${PROTOCOL}://${VITE_BACKEND_HOST}/`;
+  const API_URL = "http://0.0.0.0"
   const WS_URL = `${WS_PROTOCOL}://${VITE_BACKEND_HOST}/`;
   const FE_PORT = Number.parseInt(VITE_FRONTEND_PORT, 10);
 
